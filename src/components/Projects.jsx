@@ -1,4 +1,5 @@
 import adoptAPetImg from "../images/adopt-a-pet.jpeg";
+import portfolioImg from "../images/portfolio-1.jpeg";
 
 function Project() {
   return (
@@ -44,7 +45,7 @@ function Project() {
               <div className="projects_content_entry_img">
                 <img
                   className="projects_content_entry_img_image"
-                  src={adoptAPetImg}
+                  src={portfolioImg}
                   alt="projects_img"
                 />
               </div>
