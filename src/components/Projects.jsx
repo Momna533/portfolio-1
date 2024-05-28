@@ -40,6 +40,34 @@ function Project() {
                 </div>
               </div>
             </div>
+            <div className="projects_content_entry">
+              <div className="projects_content_entry_img">
+                <img
+                  className="projects_content_entry_img_image"
+                  src={adoptAPetImg}
+                  alt="projects_img"
+                />
+              </div>
+              <div className="projects_content_entry_text">
+                <h3>Personal Portfolio</h3>
+                <h4>Featured Project</h4>
+                <p>Personal Portfolio showing my works.</p>
+                <div className="projects_content_entry_text_links">
+                  <a
+                    target="_blank"
+                    href="https://portfolio-0-kappa.vercel.app/"
+                  >
+                    demo
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://github.com/Momna533/portfolio-0"
+                  >
+                    github
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
