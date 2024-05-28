@@ -1,5 +1,6 @@
 import adoptAPetImg from "../images/adopt-a-pet.jpeg";
 import portfolioImg from "../images/portfolio-1.jpeg";
+import adhocImg from "../images/adhoc.jpeg";
 
 function Project() {
   return (
@@ -64,6 +65,28 @@ function Project() {
                     target="_blank"
                     href="https://github.com/Momna533/portfolio-0"
                   >
+                    github
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="projects_content_entry">
+              <div className="projects_content_entry_img">
+                <img
+                  className="projects_content_entry_img_image"
+                  src={adhocImg}
+                  alt="projects_img"
+                />
+              </div>
+              <div className="projects_content_entry_text">
+                <h3>Adhoc Website</h3>
+                <h4>Featured Project</h4>
+                <p>Administration made easy. .</p>
+                <div className="projects_content_entry_text_links">
+                  <a target="_blank" href="https://adhoc-seven.vercel.app/">
+                    demo
+                  </a>
+                  <a target="_blank" href="https://github.com/Momna533/Adhoc">
                     github
                   </a>
                 </div>
