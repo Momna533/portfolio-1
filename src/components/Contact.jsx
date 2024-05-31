@@ -29,16 +29,15 @@ function Contact() {
         }
       );
       console.log("Success:", response.data);
-
-      setFormData({
-        name: "",
-        email: "",
-        message: "",
-      });
     } catch (error) {
       console.error("Error:", error);
     }
     console.log("Form Data Submitted:", formData);
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
   };
   return (
     <>
