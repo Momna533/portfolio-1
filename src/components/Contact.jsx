@@ -6,6 +6,7 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [success, setSuccess] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
 
   const handleSubmit = async (e) => {
@@ -19,7 +20,15 @@ function Contact() {
         "bxtHcJqr5ICGbHnJW"
       );
       setSuccess(true);
+      setShowSuccess(true);
       console.log(result);
+      setName("");
+      setEmail("");
+      setMessage("");
+
+      setTimeout(() => {
+        setShowSuccess(false);
+      }, 3000);
     } catch (error) {
       setSuccess(false);
       console.log(error);
@@ -80,12 +89,12 @@ function Contact() {
               <button type="submit" disabled={isProcessing}>
                 {isProcessing ? "Sending..." : "Submit"}
               </button>{" "}
+              {success && showSuccess && (
+                <div className="contact_content_right_success">
+                  email sent successfully
+                </div>
+              )}
             </form>
-            {success && (
-              <div className="contact_content_right_success">
-                email sent successfully
-              </div>
-            )}
           </div>
         </div>
       </div>
