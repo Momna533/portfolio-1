@@ -1,6 +1,7 @@
 import adoptAPetImg from "../images/adopt-a-pet.jpeg";
 import portfolioImg from "../images/portfolio-1.jpeg";
 import adhocImg from "../images/adhoc.jpeg";
+import reduxEcommerceImg from "../images/redux-ecommerce.jpeg";
 
 function Project() {
   return (
@@ -11,6 +12,37 @@ function Project() {
           <p>Here are a few projects I`ve worked on recently</p>
           <div className="underline"></div>
           <div className="projects_content_entries">
+            <div className="projects_content_entry">
+              <div className="projects_content_entry_img">
+                <img
+                  className="projects_content_entry_img_image"
+                  src={reduxEcommerceImg}
+                  alt="projects_img"
+                />
+              </div>
+              <div className="projects_content_entry_text">
+                <h3>Ecommerce app</h3>
+                <h4>Featured Project</h4>
+                <p>
+                  A project using React Redux for state management in a React
+                  Ecommerce Application.
+                </p>
+                <div className="projects_content_entry_text_links">
+                  <a
+                    target="_blank"
+                    href="https://redux-ecommerce-app-kappa.vercel.app/"
+                  >
+                    demo
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://github.com/Momna533/redux-ecommerce-app"
+                  >
+                    github
+                  </a>
+                </div>
+              </div>
+            </div>
             <div className="projects_content_entry">
               <div className="projects_content_entry_img">
                 <img
