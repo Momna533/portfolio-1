@@ -23,8 +23,10 @@ function Project() {
                 <h3>Adopt a pet</h3>
                 <h4>Featured Project</h4>
                 <p>
-                  Adopt a pet is a pet adoption website where you can find pets
-                  for adoption.
+                  A project using React Router to add client-side routing to a
+                  React Application. It is a pet adoption website that allows
+                  users to view all the adoptable pets of a particular species
+                  and view the profiles of specific adoptable pets.
                 </p>
                 <div className="projects_content_entry_text_links">
                   <a
@@ -81,7 +83,10 @@ function Project() {
               <div className="projects_content_entry_text">
                 <h3>Adhoc Website</h3>
                 <h4>Featured Project</h4>
-                <p>Administration made easy. .</p>
+                <p>
+                  An office administration website using the knowledge of React
+                  Bootstrap.
+                </p>
                 <div className="projects_content_entry_text_links">
                   <a target="_blank" href="https://adhoc-seven.vercel.app/">
                     demo

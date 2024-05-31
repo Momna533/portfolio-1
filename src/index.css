@@ -457,6 +457,10 @@ p {
   z-index: 99;
   transition: all 0.3s ease;
 }
+.projects_content_entry_text p {
+  font-size: 13px;
+  letter-spacing: 0.1em;
+}
 .projects_content_entry:nth-child(even) {
   flex-direction: row-reverse;
   transition: all 0.3s ease;

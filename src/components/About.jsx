@@ -23,9 +23,9 @@ function About() {
                 easy to use. My aim is to bring across your message and identity
                 in the most creative way.
               </p>
-              <Link to="" className="about_btn">
-                Download CV
-              </Link>
+              <a href="/public/Momna Ijaz.pdf" download="Momna Ijaz.pdf">
+                <button className="about_btn">Download CV</button>
+              </a>
             </div>
           </div>
         </div>
