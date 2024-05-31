@@ -1,43 +1,29 @@
 import { useState } from "react";
-import axios from "axios";
+import emailjs from "emailjs-com";
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    try {
-      const response = await axios.post(
-        "https://portfolio-1-contact-api.vercel.app/",
-        formData,
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
+
+    emailjs
+      .sendForm(
+        "service_xttu0tr",
+        "template_yk7jr5c",
+        e.target,
+        "bxtHcJqr5ICGbHnJW"
+      )
+      .then(
+        (result) => {
+          console.log(result);
+        },
+        (error) => {
+          console.log(error);
         }
       );
-      console.log("Success:", response.data);
-    } catch (error) {
-      console.error("Error:", error);
-    }
-    console.log("Form Data Submitted:", formData);
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
   };
   return (
     <>
@@ -68,8 +54,8 @@ function Contact() {
                 type="text"
                 id="name"
                 name="name"
-                value={formData.name}
-                onChange={handleChange}
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 required
               />
 
@@ -78,8 +64,8 @@ function Contact() {
                 type="email"
                 id="email"
                 name="email"
-                value={formData.email}
-                onChange={handleChange}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 required
               />
 
@@ -87,8 +73,8 @@ function Contact() {
               <textarea
                 id="message"
                 name="message"
-                value={formData.message}
-                onChange={handleChange}
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 required
               />
               <button type="submit">Submit</button>
