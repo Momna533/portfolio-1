@@ -5,25 +5,27 @@ function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [success, setSuccess] = useState(false);
+  const [isProcessing, setIsProcessing] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
+    setIsProcessing(true);
+    try {
+      const result = await emailjs.sendForm(
         "service_xttu0tr",
         "template_yk7jr5c",
         e.target,
         "bxtHcJqr5ICGbHnJW"
-      )
-      .then(
-        (result) => {
-          console.log(result);
-        },
-        (error) => {
-          console.log(error);
-        }
       );
+      setSuccess(true);
+      console.log(result);
+    } catch (error) {
+      setSuccess(false);
+      console.log(error);
+    } finally {
+      setIsProcessing(false);
+    }
   };
   return (
     <>
@@ -58,7 +60,6 @@ function Contact() {
                 onChange={(e) => setName(e.target.value)}
                 required
               />
-
               <label htmlFor="email">Email:</label>
               <input
                 type="email"
@@ -68,7 +69,6 @@ function Contact() {
                 onChange={(e) => setEmail(e.target.value)}
                 required
               />
-
               <label htmlFor="message">Message:</label>
               <textarea
                 id="message"
@@ -77,8 +77,15 @@ function Contact() {
                 onChange={(e) => setMessage(e.target.value)}
                 required
               />
-              <button type="submit">Submit</button>
+              <button type="submit" disabled={isProcessing}>
+                {isProcessing ? "Sending..." : "Submit"}
+              </button>{" "}
             </form>
+            {success && (
+              <div className="contact_content_right_success">
+                email sent successfully
+              </div>
+            )}
           </div>
         </div>
       </div>
