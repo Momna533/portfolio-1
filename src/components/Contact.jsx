@@ -20,7 +20,7 @@ function Contact() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://portfolio-1-contact-api.vercel.app/submit",
+        "http://localhost:5000/submit/submit",
         formData,
         {
           headers: {
