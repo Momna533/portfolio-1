@@ -1,9 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import dotenv from "dotenv";
-dotenv.config();
 
-const url = process.env.API_URL;
 function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -22,11 +19,15 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(url, formData, {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const response = await axios.post(
+        "https://portfolio-1-contact-api.vercel.app/",
+        formData,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
       console.log("Success:", response.data);
 
       setFormData({
