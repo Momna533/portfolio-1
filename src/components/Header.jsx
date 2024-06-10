@@ -18,8 +18,52 @@ const Header = () => {
   };
   return (
     <div className="header" id="header">
-      <div className="header_content">
-        <div className="header_content_center">
+      <div className="header__content">
+        <div
+          className="logo"
+          onClick={() => {
+            scrollToTop();
+            setIsOpen(false);
+          }}
+        >
+          <img src={logo} alt="logo" />
+        </div>
+        <button className="menu__btn" onClick={handleToggle}>
+          {isOpen ? (
+            <AiOutlineClose className="close" />
+          ) : (
+            <AiOutlineMenu className="open" />
+          )}
+        </button>
+        <div className="nav__links">
+          <a href="#header">home</a>
+          <a href="#about">about</a>
+          <a href="#services">skills</a>
+          <a href="#projects">projects</a>
+        </div>
+        <div className="cta__btn contact__btn">
+          <a href="#contact">contact</a>
+        </div>
+        {isOpen && (
+          <div className="nav__drawer">
+            <a href="#header" onClick={() => setIsOpen(false)}>
+              home
+            </a>
+            <a href="#about" onClick={() => setIsOpen(false)}>
+              about
+            </a>
+            <a href="#services" onClick={() => setIsOpen(false)}>
+              skills
+            </a>
+            <a href="#projects" onClick={() => setIsOpen(false)}>
+              projects
+            </a>
+            <a href="#contact" onClick={() => setIsOpen(false)}>
+              contact
+            </a>
+          </div>
+        )}
+        {/* <div className="header_content_center">
           <Link
             className="header_content_logo"
             onClick={() => {
@@ -54,7 +98,7 @@ const Header = () => {
           <li>
             <Link to="/#contact">contact</Link>
           </li>
-        </div>
+        </div> */}
       </div>
     </div>
   );

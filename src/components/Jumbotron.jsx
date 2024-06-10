@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const useScrollToHash = () => {
   const { hash } = useLocation();
@@ -21,9 +21,9 @@ function Jumbotron() {
           <div className="underline"></div>
           <h1>I`m Momna Ijaz</h1>
           <h4>Freelence web and mobile developer</h4>
-          <Link to="/#contact" className="jumbotron_btn">
-            Contact me
-          </Link>
+          <div className="cta__btn">
+            <a href="#contact">Contact me</a>
+          </div>
         </div>
       </div>
     </>
