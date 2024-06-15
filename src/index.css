@@ -465,6 +465,9 @@ p {
   justify-content: center;
   transition: all 0.3s ease;
   border-radius: 5px;
+  border-width: 1px;
+  border-color: #2caeba;
+  border-style: dashed;
 }
 .projects_content_entry_img::after {
   content: "";
@@ -477,6 +480,7 @@ p {
   opacity: 0.85;
   transition: all 0.3s ease;
   border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 1);
 }
 .projects_content_entry_img img {
   width: 100%;
