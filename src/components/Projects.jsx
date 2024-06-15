@@ -1,8 +1,8 @@
 import adoptAPetImg from "../images/adopt-a-pet.jpeg";
 import portfolioImg from "../images/portfolio-1.jpeg";
-import adhocImg from "../images/adhoc.jpeg";
 import reduxEcommerceImg from "../images/redux-ecommerce.jpeg";
 import redditAppImg from "../images/redditApp.jpeg";
+import jammmingAppImg from "../images/jammming.jpeg";
 
 function Project() {
   return (
@@ -13,20 +13,20 @@ function Project() {
           <p>Here are a few projects I`ve worked on recently</p>
           <div className="underline"></div>
           <div className="projects_content_entries">
-            <div className="projects_content_entry">
+            {/* <div className="projects_content_entry">
               <div className="projects_content_entry_img">
                 <img
                   className="projects_content_entry_img_image"
-                  src={redditAppImg}
+                  src={jammmingAppImg}
                   alt="projects_img"
                 />
               </div>
               <div className="projects_content_entry_text">
-                <h3>Reddit app</h3>
+                <h3>Jammming App</h3>
                 <h4>Featured Project</h4>
                 <p>
-                  A project using useReducer and useGlobalContext hooks for
-                  state management in a Reddit Application.
+                  A project using spotify api to create playlist in Jammming
+                  Application.
                 </p>
                 <div className="project__btns">
                   <div className="cta__btn">
@@ -40,7 +40,39 @@ function Project() {
                   <div className="cta__btn">
                     <a
                       target="_blank"
-                      href="https://github.com/Momna533/reddit-web"
+                      href="https://github.com/Momna533/Jamming"
+                    >
+                      github
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div> */}
+            <div className="projects_content_entry">
+              <div className="projects_content_entry_img">
+                <img
+                  className="projects_content_entry_img_image"
+                  src={redditAppImg}
+                  alt="projects_img"
+                />
+              </div>
+              <div className="projects_content_entry_text">
+                <h3>Reddit app</h3>
+                <h4>Featured Project</h4>
+                <p>
+                  A project using redux for state management in a Reddit
+                  Application.
+                </p>
+                <div className="project__btns">
+                  <div className="cta__btn">
+                    <a target="_blank" href="https://reddit-app-xi.vercel.app/">
+                      demo
+                    </a>
+                  </div>
+                  <div className="cta__btn">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Momna533/reddit-app"
                     >
                       github
                     </a>
@@ -146,35 +178,6 @@ function Project() {
                       target="_blank"
                       href="https://github.com/Momna533/portfolio-0"
                     >
-                      github
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="projects_content_entry">
-              <div className="projects_content_entry_img">
-                <img
-                  className="projects_content_entry_img_image"
-                  src={adhocImg}
-                  alt="projects_img"
-                />
-              </div>
-              <div className="projects_content_entry_text">
-                <h3>Adhoc Website</h3>
-                <h4>Featured Project</h4>
-                <p>
-                  An office administration website using the knowledge of React
-                  Bootstrap.
-                </p>
-                <div className="project__btns">
-                  <div className="cta__btn">
-                    <a target="_blank" href="https://adhoc-seven.vercel.app/">
-                      demo
-                    </a>
-                  </div>
-                  <div className="cta__btn">
-                    <a target="_blank" href="https://github.com/Momna533/Adhoc">
                       github
                     </a>
                   </div>
