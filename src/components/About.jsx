@@ -1,10 +1,7 @@
-import { Link } from "react-router-dom";
-import aboutImg from "../images/about.png";
-
 function About() {
   return (
     <>
-      <div className="about__content">
+      <div className="hero__middle">
         <h1>Know Who I`m</h1>
         <h4>
           I enjoy turning complex problems into simple, beautiful and intuitive
@@ -14,11 +11,6 @@ function About() {
           to use. My aim is to bring across your message and identity in the
           most creative way.
         </h4>
-        <button>
-          <a href="/public/Momna Ijaz.pdf" download="Momna Ijaz.pdf">
-            Download CV
-          </a>
-        </button>
       </div>
     </>
   );

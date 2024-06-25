@@ -40,32 +40,25 @@ const Footer = () => {
             </p>
             <div className="footer__social__links">
               <a
-                href="https://www.linkedin.com/in/momna-ijaz/"
+                href="https://www.linkedin.com/in/momna-ijaz-113797210/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <FaLinkedin />
               </a>
               <a
-                href="https://github.com/momna-ijaz"
+                href="https://github.com/Momna533"
                 target="_blank"
                 rel="noreferrer"
               >
                 <FaGithub />
               </a>
               <a
-                href="https://www.instagram.com/momna_ijaz/"
+                href="https://github.com/Momna533"
                 target="_blank"
                 rel="noreferrer"
               >
                 <FaInstagram />
-              </a>
-              <a
-                href="https://twitter.com/momna_ijaz"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaTwitter />
               </a>
             </div>
           </div>
