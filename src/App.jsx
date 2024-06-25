@@ -8,9 +8,8 @@ import Hero from "./components/Hero";
 function App() {
   return (
     <>
-      <div className="hero">
-        <Hero />
-      </div>
+      <Hero />
+      <Footer />
       {/* <Header />
       <div className="main">
         <Jumbotron />
