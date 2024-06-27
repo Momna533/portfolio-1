@@ -1,10 +1,9 @@
 import { FiMenu } from "react-icons/fi";
 import logo from "../assets/logo.png";
-import Button from "./Button";
 import { useGlobalContext } from "../context/context";
 import { CgClose } from "react-icons/cg";
 const Header = () => {
-  const { toggleMenu, isMenuOpen, setIsMenuOpen } = useGlobalContext();
+  const { toggleMenu, isMenuOpen } = useGlobalContext();
   return (
     <>
       <div className="header">
@@ -12,19 +11,17 @@ const Header = () => {
           <a href="#home">Home</a>
           <a href="#projects">Projects</a>
           <a href="#services">services</a>
-          <a href="contact">Contact</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
-      <div className="mobie__header">
+      <div className="mobile__header">
         <div className="mobile__nav">
           <a className="logo">
             <img src={logo} alt="logo" />
           </a>
-          <Button
-            text={isMenuOpen ? <CgClose /> : <FiMenu />}
-            onClick={toggleMenu}
-            className="menu__btn"
-          />
+          <button className="menu__btn" onClick={toggleMenu}>
+            {isMenuOpen ? <CgClose /> : <FiMenu />}
+          </button>
         </div>
         {isMenuOpen && (
           <div className="mobile__drawer">
@@ -32,7 +29,7 @@ const Header = () => {
             <a href="#projects">Projects</a>
             <a href="#services">services</a>
             <a href="about">About</a>
-            <a href="contact">Contact</a>
+            <a href="#contact">Contact</a>
           </div>
         )}
       </div>

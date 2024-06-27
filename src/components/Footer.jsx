@@ -5,17 +5,17 @@ import {
   FaInstagram,
   FaLinkedin,
   FaMobile,
-  FaTwitter,
 } from "react-icons/fa";
+import Contact from "./Contact";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="container" id="contact">
       <div className="footer__content">
         <div className="footer__top">
-          <div className="footer__top__content">
+          <div className="container__content footer__top__content">
             <div className="footer__cards">
-              <h1>Contact Me</h1>
+              <h2>Contact Me</h2>
               <FooterCard icon={<FaMobile />} text="0337-7251311" />
               <FooterCard
                 icon={<FaHome />}
@@ -24,17 +24,12 @@ const Footer = () => {
               <FooterCard icon={<FaGoogle />} text="momna533gb@gmail.com" />
             </div>
             <div className="footer__form">
-              <form>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <textarea placeholder="Message" />
-                <button type="submit">Send</button>
-              </form>
+              <Contact />
             </div>
           </div>
         </div>
         <div className="footer__bottom">
-          <div className="footer__bottom__content">
+          <div className="container__content footer__bottom__content">
             <p>
               COPYRIGHT©2023 <span> MOMNA IJAZ</span> ALL RIGHTS RESERVED
             </p>

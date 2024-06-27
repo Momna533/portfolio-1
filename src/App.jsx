@@ -1,24 +1,16 @@
-import Header from "./components/Header";
-import About from "./components/About";
 import Services from "./components/Services";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
-import Contact from "./components/Contact";
 import Hero from "./components/Hero";
+import Skills from "./components/Skills";
 function App() {
   return (
     <>
       <Hero />
+      <Projects />
+      <Skills />
+      <Services />
       <Footer />
-      {/* <Header />
-      <div className="main">
-        <Jumbotron />
-        <About />
-        <Services />
-        <Projects />
-        <Contact />
-      </div>
-      <Footer /> */}
     </>
   );
 }
