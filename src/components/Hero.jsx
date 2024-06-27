@@ -3,7 +3,7 @@ import Header from "./Header";
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero" id="home">
       <Header />
       <div className="hero__primary">
         <h3>Hi</h3>
@@ -20,7 +20,7 @@ const Hero = () => {
         </button>
       </div>
       <div className="hero__middle">
-        <h1>Know Who I`m</h1>
+        <h2>Know Who I`m</h2>
         <h4>
           I enjoy turning complex problems into simple, beautiful and intuitive
           solutions. I like to build functional and user-friendly and at the
@@ -53,7 +53,7 @@ const Hero = () => {
             <FaGithub />
           </a>
           <a
-            href="https://github.com/Momna533"
+            href="https://www.instagram.com/momna00000/"
             target="_blank"
             rel="noreferrer"
           >
