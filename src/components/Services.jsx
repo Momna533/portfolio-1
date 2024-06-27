@@ -22,6 +22,7 @@ const Services = () => {
               "MongoDB",
               "Mongoose",
               "REST",
+              "axios",
             ]}
           />
           <ServiceEntry
