@@ -45,10 +45,12 @@ button {
   z-index: 9;
   color: #6e4e46;
   border: 1px solid #fefefe;
+  padding-inline: 0;
 }
 button a {
   font-weight: bold;
   letter-spacing: 1px;
+  padding: 1em 2.25em;
 }
 button:hover {
   background-color: transparent;
