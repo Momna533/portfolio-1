@@ -30,7 +30,7 @@ const Hero = () => {
           most creative way.
         </h4>
         <button>
-          <a href="/public/Momna Ijaz.pdf" download="Momna Ijaz.pdf">
+          <a href="/Momna Ijaz.pdf" download="Momna Ijaz.pdf">
             Download CV
           </a>
         </button>
