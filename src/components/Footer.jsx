@@ -1,14 +1,6 @@
-import {
-  FaGithub,
-  FaGoogle,
-  FaHome,
-  FaInstagram,
-  FaLinkedin,
-  FaMobile,
-} from "react-icons/fa";
+import { FaGithub, FaGoogle, FaHome } from "react-icons/fa";
 import Contact from "./Contact";
 import Divider from "./Divider";
-import { FaTiktok } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -17,9 +9,8 @@ const Footer = () => {
         <h2>Stay in Touch</h2>
         <div className="footer__top">
           <div className="footer__top__left">
-            <FooterCard icon={<FaMobile />} text="+92-123456789" />
-            <FooterCard icon={<FaHome />} text="Faisalabad Paskistan" />
-            <FooterCard icon={<FaGoogle />} text="momnadev533gb@gmail.com" />
+            <FooterCard icon={<FaHome />} text="Faisalabad Pakistan" />
+            <FooterCard icon={<FaGoogle />} text="momna533gb@gmail.com" />
           </div>
           <div className="footer__top__right">
             <Contact />
@@ -32,32 +23,11 @@ const Footer = () => {
           </p>
           <div className="footer__social__links">
             <a
-              href="https://www.linkedin.com/in/momnaijaz/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaLinkedin />
-            </a>
-            <a
               href="https://github.com/Momna533"
               target="_blank"
               rel="noreferrer"
             >
               <FaGithub />
-            </a>
-            <a
-              href="https://www.instagram.com/momna_ijaz_/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaInstagram />
-            </a>
-            <a
-              href="https://www.tiktok.com/@momna_ijaz"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaTiktok />
             </a>
           </div>
         </div>

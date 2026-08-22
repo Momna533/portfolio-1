@@ -1,4 +1,4 @@
-import { FaGithub, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import Header from "./Header";
 
 const Hero = () => {
@@ -12,8 +12,8 @@ const Hero = () => {
           frontend web developer
         </h1>
         <h4>
-          I am a freelance web and mobile developer. I have experience in
-          building websites and mobile applications.
+          I am a freelance web developer. I have experience in building
+          websites.
         </h4>
         <button>
           <a href="#contact">Let`s Talk</a>
@@ -30,7 +30,7 @@ const Hero = () => {
           most creative way.
         </h4>
         <button>
-          <a href="/Momna Ijaz.pdf" download="Momna Ijaz.pdf">
+          <a href="/Resume developer.pdf" download="Momna Ijaz.pdf">
             Download CV
           </a>
         </button>
@@ -39,32 +39,11 @@ const Hero = () => {
         <h3>Stay connected</h3>
         <div className="hero__social__icons">
           <a
-            href="https://www.linkedin.com/in/momnaijaz/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaLinkedin />
-          </a>
-          <a
             href="https://github.com/Momna533"
             target="_blank"
             rel="noreferrer"
           >
             <FaGithub />
-          </a>
-          <a
-            href="https://www.instagram.com/momna_ijaz_/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaInstagram />
-          </a>
-          <a
-            href="https://www.tiktok.com/@momna_ijaz"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaTiktok />
           </a>
         </div>
       </div>

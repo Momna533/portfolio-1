@@ -22,24 +22,6 @@ const Projects = () => {
             demoHref={"https://landing-page-two-pink-76.vercel.app/"}
             githubHref={"https://github.com/Momna533/landing-page"}
           />
-          <ProjectEntry
-            heading={"Airbnb clone"}
-            desc={
-              "Airbnb clone built with HTML, CSS, and JavaScript featuring responsive design and smooth animations"
-            }
-            technologies={["html5", "css3", "javascript"]}
-            demoHref={"https://airbnb-clone-five-phi.vercel.app/"}
-            githubHref={"https://github.com/Momna533/airbnb-clone"}
-          />
-          <ProjectEntry
-            heading={"FloristShop Landing Page"}
-            desc={
-              "FloristShop landing page built with HTML, CSS, and JavaScript featuring responsive design and smooth animations"
-            }
-            technologies={["html5", "css3", "javascript"]}
-            demoHref={"https://landing-page-florist-shop.vercel.app/"}
-            githubHref={"https://github.com/Momna533/landingPage-floristShop"}
-          />
         </div>
       </div>
     </div>
